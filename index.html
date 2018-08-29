@@ -32,20 +32,19 @@
         <main>
             <h2 class="" id="title">Students Data</h2>
             <section id="studentsContent">
-                <script id="pageTemplate" type="text/x-handlebars-template">
+                <!-- <script id="pageTemplate" type="text/x-handlebars-template">
                     <div class="row">
                         {{#each data}}
                         <div class =" col-10 offset-1 border">
                             <div class="row">
                                 <img src="" alt="" src="{{photo}}" class="col-2 img-thumbnail ">
                                 <div class="col-3">
-                                    <!-- {{#each }} -->
                                     <div>{{name}}</div>
-                                    <div>{{apellido}}</div>
+                                    <div>{{lastName}}</div>
                                 </div>
                                 <div class="col-5">
                                     <div>Skills</div>
-                                    <div class="skillbtn btn">{{skill}}
+                                    <div class="skillbtn btn">{{proficency}}
                                         <button type="button" class="btn skillbtn closebtn" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
@@ -56,8 +55,39 @@
                         </div>
                         {{/each}}    
                     </div>
-                </script>
-                
+                </script> -->
+                <!-- <script type="text/javascript">
+                    var myTemplate= document.getElementById("pageTemplate").innerHTML;
+                    var data=[
+                    {
+                        name: "sarah",
+                        lastName: "Ruiz Lopez",
+                        proficiency: ["Node.js","JavaScript","Css","Sass"],
+                        photo: "https://placekitten.com/300/300"
+                    },
+                    {
+                        name: "Larry",
+                        last_name: "cañonga",
+                        proficiency: ["Node.js","JavaScript","Css","Sass"],
+                        photo:"https://placekitten.com/300/300"
+                    },
+                    {
+                        name: "Suzana",
+                        last_name: "Horia",
+                        proficiency: ["Node.js","JavaScript","Css","Sass"],
+                        photo:"https://placekitten.com/300/300"
+                    },
+                    {
+                        name: "Elsa",
+                        last_name: "Pato",
+                        proficiency: ["Node.js","JavaScript","Css","Sass"],
+                        photo:"https://placekitten.com/300/300"
+                    }
+                    ];
+                    var compiledHTML =compile(data);
+                    
+                    document.getElementById("studentsContent").innerHTML+= compiledHTML
+                </script> -->
             </section>
         </main>
     </header>
@@ -67,8 +97,9 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>   
-    <script src="../js/package.json"></script>
-    <script src="../js/assets/handlebars-v4.0.11.js"></script>
-    <script src="../js/main.js"></script>
+    <!-- <script src="./js/package.json"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.js"></script>
+    <script  id="pageTemplate" src=".\js\templates\students.handlebars" type="text/x-handlebars-template"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html> 
