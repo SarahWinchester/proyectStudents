@@ -1,0 +1,14 @@
+.secondBar{
+    background-color: rgb(221, 221, 221);
+    height: 10vh;
+}
+#title{
+    margin-top: 10vh;
+    margin-left: 50px;
+}
+.thirdBar{
+    padding-top: 2vh;
+}
+.skillbtn{
+    background-color: cadetblue;
+}

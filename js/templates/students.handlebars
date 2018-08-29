@@ -1,0 +1,23 @@
+<div class="row">
+    {{#each data}}
+        <div class =" col-10 offset-1 border">
+            <div class="row">
+                <img src="" alt="" src="{{photo}}" class="col-2 img-thumbnail ">
+                <div class="col-3">
+                                        <!-- {{#each }} -->
+                        <div>{{name}}</div>
+                        <div>{{apellido}}</div>
+                </div>
+                <div class="col-5">
+                    <div>Skills</div>
+                        <div class="skillbtn btn">{{skill}}
+                            <button type="button" class="btn skillbtn closebtn" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    <div><i class="fas fa-plus"></i> Añadir otro</div>
+                </div>
+            </div>
+        </div>
+    {{/each}}    
+</div>
